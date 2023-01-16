@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 
 -- Better j and k on line wraps
-vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
-vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
+-- vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
+-- vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 
 -- Better indent
 vim.keymap.set("v", "<", "<gv")
@@ -26,3 +26,9 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 -- delete to void
 vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
+-- copy to clipboard
+vim.keymap.set("x", "<leader>y", "\"+y")
+
+-- center after half page movement
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
