@@ -6,6 +6,7 @@ vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 
 -- Better indent
 vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
 -- good moving between windows
 vim.keymap.set("n", "<C-h>", "<C-w>h")
